@@ -1,6 +1,5 @@
 package io.github.ganzes.lang;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,7 +7,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class LangService {
-    private LangRepository repository;
+    private final LangRepository repository;
 
     public LangService(LangRepository repository){
         this.repository = repository;
